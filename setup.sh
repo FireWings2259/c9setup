@@ -40,6 +40,10 @@ git clone $gurl || { echo >&2 "failed with $?"; exit 1; }
 #Setup the workspace
 gdir=$(ls -td $wksp*/ | head -1)
 
+#Set the Username and Email
+git config --global user.email "FireWings2259@users.noreply.github.com"
+git config --global user.name "FireWings"
+
 #echo /tmp/FireSetup.tmp > tmp
 
 echo " " >> $HOME/.bashrc
